@@ -1,0 +1,31 @@
+/*******************************TAG Selector************************************/
+
+h1{
+    color: red;
+}
+
+img:hover{  /*Fare üzerine geldiğinde arka plan rengi gold olur*/
+   background-color: gold;
+}
+
+
+/*******************************CLASS Selector************************************/
+
+.bacon{      /* Sınıfı belirtmek için başa nokta işareti konur*/
+    background-color: green;
+
+}
+
+.broccoli{ 
+    background-color: red;
+
+}
+.circulas{   /*"broccoli circulas" sınıfını ikiye ayırıp çağırabiliriz. Ama bu id de olmaz*/
+    border-radius: 100%;
+}
+/*******************************İD Selector************************************/
+/*hiyerarşik sıra id>class>Tag.*/
+
+#heading{
+    color: blue;  /*id çağırma*/
+}

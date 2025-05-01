@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Simple Calculator</h1>   
+    <label>Small number :</label>
+    <input type="number" id="number1">
+    <select id="selection">
+        <option value="sum">+</option>
+        <option value="extract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+    </select>
+    <label>Big number:</label>
+    <input type="number" id="number2">
+    <button id="button">find result</button>
+    <div id="result"></div>
+    <script>
+      let result;
+      function calculate(){
+        let number1=document.getElementById("number1").value;
+        let number2=document.getElementById("number2").value;
+        let selection=document.getElementById("selection").value;   
+        let s1 = parseInt(number1);
+        let s2 = parseInt(number2);
+        if(selection == 'sum')
+            result = s1 + s2;
+        else if(selection == 'extract')
+            result = s1 - s2;
+        else if(selection == 'multiply')
+             result = s1 * s2;
+        else 
+            result = s1 / s2;
+        document.getElementById("result").innerHTML = "result : " + result;
+       }
+        let calculateBtn=document.getElementById("button");
+        calculateBtn.onclick=calculate;
+    </script>
+</body>
+</html>

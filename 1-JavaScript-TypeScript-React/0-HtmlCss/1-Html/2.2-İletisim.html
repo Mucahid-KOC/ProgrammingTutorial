@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\m_koc\Desktop\Dosyalar\VS\Web\FullStack\2-CSS-İlkDers\index.css">
+</head>
+<body>
+    <h3>İletişim</h3>
+<p>Hayali Adres</p>
+<p>02522112132</p>
+<p>ulasbana@gmail.com</p>
+
+                                                        <!--enctype: normal yazı düzenidir.Bu sayede saçma harfler karşınıza çıkmaz-->
+<form action="mailto:ulasbana@gmail.com" method="post" enctype="text/plain" >  <!-- Formun içine nelerin gireceğinin tanımlanması--> <!--mailto: submit e basınca maile gider. -->
+    <label for="">İsminiz Nedir?:</label> <!--label oluşturur-->
+    <input type="text" name="İsminiz:">            <!--input: veri almaya yarar.--> <!--text: Yazı kısmını oluşturur-->
+    <br>
+    <label for="">Email Adresin :  </label>
+    <input type="email" name="E-Mail Adresin::">
+    <br><br>
+    <label for="">Şifreniz</label>  <!--Şifre yazılacak kısmı oluşturur. Yazılanlar yıldızlı olur-->
+    <input type="password">
+    <br><br>
+    <input type="submit">           <!--Gönder butonu oluşturur-->
+    <br><br>
+    <label for="">Kabul ediyor musunuz?</label>
+    <input type="checkbox">
+    <br><br>
+    <input type="date"><br><br>             <!--Tarih kısmını oluşturur-->
+    <textarea name="Mesajın:" id="" cols="30" rows="10"></textarea>  <!--Belirtilen alan kadar yazı alanı oluşturur-->
+    <!--input'daki name içine girilen ifadeler gönderilen mesajlarda default olarak gözükür.-->
+</form>
+</body>
+</html>
+

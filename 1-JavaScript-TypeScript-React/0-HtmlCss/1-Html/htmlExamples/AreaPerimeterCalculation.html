@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Area-Perimeter Calculation </h1>   
+    <label>Short edge</label>
+    <input type="number" id="shortEdge">
+    <label>Long edge</label>
+    <input type="number" id="longEdge">
+    <button id="calculate">Calculate</button>   
+    <div id="Perimeter"></div>
+    <div id="Area"></div>
+    <script>
+        function Calculate(){
+            var shortEdge=document.getElementById("shortEdge").value;
+            var longEdge=document.getElementById("longEdge").value;
+            se=parseInt(shortEdge);
+            le=parseInt(longEdge);
+            var dArea=se*le;
+            var dPerimeter=(se+le)*2;
+            document.getElementById("Area").innerHTML="Area : " + dArea;
+            document.getElementById("Perimeter").innerHTML="Çevre : " + dPerimeter;   
+        }       
+        var hspBtn=document.getElementById("calculate");
+        calculate.onclick=Calculate;
+    </script> 
+</body>
+</html>

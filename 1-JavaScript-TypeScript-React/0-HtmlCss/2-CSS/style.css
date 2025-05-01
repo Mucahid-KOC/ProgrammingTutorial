@@ -1,0 +1,37 @@
+.Red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    
+    /*position: relative; */     /*şimdi pozisyonlarını ayarlayabiliriz.Ayrıca obje hayalet gibi olur başka bir objeyi etkilemez.*/
+    /*top: 200px;*/              /*yukardan 75px aşağı gelir.Relative position objenin bulundupu kısımda gerçekleşir*/
+    /*position: absolute;*/  /*Relativeden farkı obje hayalet gibi olur ama html kodun aşını etkiler. Diğer objeler sanki bu obje yokmuş gibi davranır*/
+                             /*Relative de diğer objeler yerinde kalır. Html kodun akışı etkilenmezdi*/
+                             /*absolute posion parent-child durumuna göre hareket eder. Sahip olduğu parent e göre işlemler gerçekleşir.*/
+    /*position: fixed;*/     /*fixed positionda ise belirtilen yerde scroll aşağı inince obje sabit kalır.*/  
+    position: absolute;
+    top: 200px;
+    left: 200px;
+                            }
+
+.Blue{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    
+    
+}
+.Yellow{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    
+    
+}

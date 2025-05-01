@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayfam</title>
+
+    <!--External Css : Başka bir klasörden çağırma--> 
+    <link rel="stylesheet" href="C:\Users\m_koc\Desktop\Dosyalar\VS\Web\FullStack\2-CSS-İlkDers\index.css">
+
+    <!--internal css: Css imizi bu kısımda tanımlarız.-->
+<!--  
+   <style> /* css kodlarımızı yazmaya bu ifadeyle başarız  */
+        body{ /* arka plan rengi değişir */
+            background-color: #EAF6F6;
+        }
+
+        hr{  /* tüm hr elamanlarına bu işlem uygulanır.*/
+            
+            border-style:none;
+            border-top-style: dotted;
+            border-color: grey;
+            border-width: 5px;
+            width: 5%;
+            
+        }
+    </style>
+--> 
+
+</head>
+
+<!--<body style="background-color: #FFFFDE;">  background-color: Arka plan rengini ayarlayan css kodu. -->  <!--colorhunt.co: renk sitesi-->
+<body>
+    <table cellspacing="20"> <!--table:tablo yapmaya yarar.    Cellspacing: Hücreler arası boşluğu belirtir.-->
+        <tr>
+            <td><!--img: Resim eklemeye yarar. Site linki verileceği gibi resmin adresi verilerek de ulaşılabilir."src" kısmına linki yada yolu belirtiriz."alt"kısmına ise açıklamayı.-->
+                <img src="https://media-exp1.licdn.com/dms/image/C5603AQEz0KLVRP415A/profile-displayphoto-shrink_200_200/0/1570706556249?e=1660176000&v=beta&t=FcfFTRRkg1KaCJu6WY3AOncLsxbztss2pE8Gu5VHyOc" alt="Mücahid Profil Resmi">
+            </td>
+
+            <td><h1>Mücahid KOÇ</h1>
+                <p><em><strong> <a href="https://www.erciyes.edu.tr/">Erciyes Üniversitesi</a> '</strong>nde Öğrenci.</em></p>  <!--em:italik yapar(i:buda italik yapar.),Strong:Kalın yazar.(b:buda kalın yazdırır.)-->
+                <p>Ben bir mühendis adayıyım. Web geliştirmeyi ve oyun yapmayı severim.</p> <!--a href : link vermemize yarar.-->    
+            </td>
+
+        </tr>
+    </table>
+    
+    <hr>
+
+    <h3>Kitaplar ve Yazarları</h3>     <!--Düzenli ve Düzensiz Liste Yapma-->
+    <ul>
+        <li>Harry Potter-J.K.Rowling</li>
+        <li>Yüzüklerin Efendisi-Tolkien</li>
+    </ul>
+
+    <a href="2.1-Hobiler.html">Hobilerim</a> <!--a href : Bu şekilde oluşturduğumuz html sayfasına da yönlendirebilir, bu sayede yeni sayfada istediğimiz şeyi açabiliriz. -->
+    <br>
+    <a href="2.2-İletisim.html">İletişim</a>
+    <hr>
+    <h3>Çalışma Deneyimi</h3>
+
+    <table cellspacing="10">
+
+        <thead>            <!--thead,tbody,tfoot: Bölümlendirmek için kuyllanılır. Kullanılmasa da kod çalışır.-->
+            <th>Yıl</th>   <!--Table başlığı koyar-->
+            <th>Ne Yapıyordun?</th>
+        </thead>
+
+        <tbody>
+            <tr>                  <!--table row: Verilerin nereye gittiği belli olur. İçine birşey yazılmazsa ekran boş görünür.-->
+                <td>2016-2022</td><!--table data ya da table cells: Tablo hücrelerine yazar-->
+                <td>Öğrenci </td>
+            </tr>
+    
+            <tr>
+                <td>2022</td>
+                <td>Frond End Geliştirici</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br>
+    <hr>
+    
+    <h3>Becerilerim</h3>
+
+    <table> <!--İç içe tablolar-->
+        
+        <tr>
+            <!--Birinci sütun gibi düşün-->
+            <td>
+                <table cellspacing="10">
+                    <tr>
+                        <td>Web Geliştirici </td>
+                        <td>⭐⭐⭐</td>   
+                     </tr>
+                     <tr>
+                         <td>Yazarlık</td>
+                         <td>⭐⭐</td>   
+                     </tr>
+                 </table>
+                
+            </td>
+
+            <!--İkinci sütun gibi düşün-->
+            <td>
+                <table cellspacing="10">
+                    <tr>
+                        <td>Oyun Geliştirici</td>
+                        <td>⭐⭐⭐⭐</td>
+                     </tr>
+                     <tr>
+                        <td>Harita Tasarımcılığı</td>
+                        <td>⭐</td>
+                     </tr>
+                
+                </table>
+            </td>
+
+        </tr>
+
+    </table>
+  
+
+</body>
+
+</html>

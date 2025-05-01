@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    /*Margin ile kenar boşluklarını sıfırladık. Böyle yaptık çünkü default ayarı boşluk bırakıyor. Bunu sıfırladık*/
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    /*Font sitiline seçmeye yarar.*/
+}
+
+h1 {
+    margin-top: 0;
+    /* h1 inde default ayarı var. Onuda sıfırladık. Bu sayde sayfa da kenar boşluğu kalmadı*/
+   
+    margin: 0 auto;
+    font-family: 'Sacramento', cursive;
+   
+    font-size: 5rem;
+    /* 16px = %100, 1em=16px : px yerine em yada yüzde kullanmamızın sebebi sayfayı dinamik yapmakyır. .*/
+    /*Bu sayede ekran küçültülüp büyütütürle yazılarda küçülüp büyür. Px de olmaz*/
+    /*rem ise ana boyutun(kökün)o olduğunu söyler. Kullanımı tavsiye edilir*/
+
+    color: #66BFBF;
+    line-height: 2;
+    margin-bottom: 50px;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p {
+    color: #66BFBF;
+}
+
+.top-container {
+    background-color: aqua;
+    margin: 10px;
+    /*kutunun diğer kutularla arasındaki boşluk diyebiliriz*/ 
+
+    /* border: solid 10px;*/ /*kenar çizgileri*/
+    /*padding: 10px;   */  /*kutunun iç boyutu*/
+    /*width: 100px;*   /*yaparsak 100px uzunlupunda yer kaplar. Bütün satırı değil*/
+    /*display: inline;*/ /*yaparsak inline elemente dönüşür*/
+    /*display: inline-block;*/ /*yaparsak kutu şeklinde inline olur.Birden fazla elementi yine yan yana koyabiliriz */   
+    /*display: none;*/  /*yaparsak yazı gözükmez*/
+    /*visibility:hidden;*/  /*yaparsak yazı gözükmez*/  
+    padding-top: 100px;
+}
+
+/*.middle-container{
+
+   background-color: red;
+    width: 200px;
+    height: 200px;
+
+}
+*/
+
+/*
+.bottom-container{
+   background-color: blue;
+    width: 200px;
+    height: 200px;
+
+}
+*/
+.pro {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 700px;
+}
+
+.top-cloud {
+    position: relative;
+    left: 200px;
+    
+    /*float: left;*/
+    /*Resmin altında yazı olunrsa bu kod sayeesinde yazılar resmin yanında olur*/
+    /*left-right duruma göre ayarlanır.*/
+   
+    /*clear: left;*/
+    /*anti float gibi düşünülebilir. Resmin yanında yazı kalmaz.Aşağı iner.*/
+}
+
+/*css3buttongenerator.com sitesinden button tasarlayıp css kodunuza koyabilirsiniz.*/

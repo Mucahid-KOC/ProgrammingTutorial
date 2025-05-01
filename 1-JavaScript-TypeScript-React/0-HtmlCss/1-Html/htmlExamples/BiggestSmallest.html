@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var numbers=new Array(20);
+    var min,mak;
+    for(var i=0;i<numbers.length;i++){
+       numbers[i]=Math.floor(Math.random()*100);
+    }
+    min = numbers[0];
+    mak = numbers[0];   
+    for(var i=0;i<numbers.length;i++)
+    {
+    if (min > numbers[i])
+    {
+      min = numbers[i];
+    }
+    if (mak < numbers[i])  
+    {
+      mak = numbers[i]; 
+    }
+    }  
+    for(var i=0;i<numbers.length;i++)
+    {
+      document.write(numbers[i]+"<br>");
+    }
+   document.write("Largest number in the array:" + mak+"<br>");
+   document.write("Smallest  number in the array:" + min+"<br>");   
+   </script>
+</body>
+</html>

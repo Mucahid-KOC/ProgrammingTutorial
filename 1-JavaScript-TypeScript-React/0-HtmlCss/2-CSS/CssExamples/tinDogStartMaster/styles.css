@@ -1,0 +1,201 @@
+body{
+    font-family: "Montserrat";
+}
+
+/*h1,h2,h3,h4,h5,h6{
+
+}
+Bu seşilde virgülle ayırarak çoklu işlem yapabiliriz.
+*/
+
+h1{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
+h2{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
+h3{
+    font-family: "Montserrat";
+}
+
+p{
+    color: #8f8f8f;
+}
+
+#title{
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+
+/*#title .container-fluid{
+                            Birden çok .container-fluid sınıfı tanımladıysak özel olarak title kısmına 
+                            işlem yapmak istesrsek bu şekilde kullanım yapmalıyız.
+                            Sadece  ebeveyn-çovuk ilişkisinde çalışır. Soldaki parent 
+                            sağdaki child olmadılır.
+}
+*/
+
+/*Navigation Bar*/
+
+.navbar{
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-Lig";
+    color: #fff;
+
+
+}
+
+/*Download buttons*/
+
+.download-button{
+    margin: 5% 3% 5% 0%;
+}
+
+/*Title image*/
+
+.title-image{
+padding-left: 50px;
+width: 70%;
+transform: rotate(25deg);
+/*Resmi 25 derece döndürür.*/
+position: absolute;
+right: 20%;
+
+
+}
+.title-image-div{
+    position: relative;
+    
+}
+
+/*Features Section*/
+
+#features{
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1; /*hangi öğenin arkada hangisinin önde olacağına karar verir.*/
+                /*static durumda çalışmaz.relative yada absolute posion olmalı.*/
+}
+
+.feature-box{
+    text-align: center;
+}
+
+.icon{
+    color:#ef8172 ;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
+
+
+/*Testimonials section*/
+
+#testimonials{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+.testimonials-image{
+
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+ }
+
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px; 
+ }
+
+/*pricing Section*/
+
+ #pricing{
+    padding: 100px;
+    text-align: center;
+ }
+ 
+ .pricing-column{
+    padding: 3% 2%;
+
+ }
+
+ /*Media Query*/
+ /*@media<type><feature>*/
+ /*Genel işlemlerde bootstrap kullanılırken, ince detaylarda media query kullanılır.
+ belli şartlar olunca ne olacağı belirtilir.*/
+
+ @media (max-width:1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+ }
+ 
+ /*CTA section*/
+
+ #cta{
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+ }
+ .cta-header{
+    font-family: "Montserrat";
+    font-size: 3.5rem;
+    line-height: 1.5;
+ }
+
+ /*footer section*/
+
+ #footer{
+    padding: 7% 15%;
+    text-align: center;
+ }
+ .social-icon{
+    margin: 20px 10px;
+ }
